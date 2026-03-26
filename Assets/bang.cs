@@ -8,6 +8,10 @@ public class bang : MonoBehaviour
     void Start()
     {
         Invoke("Timer", 5);
+        if (publicc == false)
+        {
+            diddy.AddForce(transform.forward * 300000 * Time.deltaTime);
+        }
     }
 
     // Update is called once per frame
@@ -17,10 +21,7 @@ public class bang : MonoBehaviour
        
        
 
-       if(publicc == false) 
-        {
-            diddy.AddForce(transform.forward * 100000 * Time.deltaTime);
-        }
+       
     }
 
     void Timer()
