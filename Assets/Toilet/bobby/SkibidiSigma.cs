@@ -8,10 +8,12 @@ public class SkibidiSigma : MonoBehaviour
 
     public GameObject bob;
     public GameObject ball;
+    public GameObject cam;
+    public GameObject camOG;
     private bool balls = false;
     void Start()
     {
-        GameObject instance = Instantiate(bob);
+       //  GameObject instance = Instantiate(bob);
     }
 
         
@@ -22,6 +24,8 @@ public class SkibidiSigma : MonoBehaviour
         {
             bob.SetActive(true);
             balls = true;
+            cam.SetActive(true);
+            camOG.SetActive(false);
         }
     }
 
@@ -30,7 +34,7 @@ public class SkibidiSigma : MonoBehaviour
     {
         if (balls == true)
         {
-            ball.transform.localScale += new Vector3(0.1f,0.1f, 0.1f);
+            ball.transform.localScale += new Vector3(0.02f,0.02f, 0.02f);
         }
         
     }

@@ -20,7 +20,7 @@ public class SkibidiToiletEpisode80fullenglishsubtitlesnoads : MonoBehaviour
             Debug.Log(times);
           transform.Translate(0,1 * Time.deltaTime,0);
             transform.Rotate(0, 500 * Time.deltaTime, 0);
-           // transform.localScale += new Vector3(0.001f,0.001f, 0.001f);
+            transform.localScale += new Vector3(0.001f,0.001f, 0.001f);
         }
        
     }
